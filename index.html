@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study With Me</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+    body { background: #0f172a; color: #e5e7eb; line-height: 1.6; overflow-x: hidden; }section { padding: 80px 10%; }
+
+/* Hero */
+.hero { display: flex; align-items: center; justify-content: space-between; min-height: 100vh; }
+.hero img { width: 280px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,.5); transform: translateY(0); transition: transform .3s ease; }
+.hero img:hover { transform: translateY(-10px); }
+
+.hero-text { max-width: 500px; animation: slideIn 1.2s ease forwards; }
+.hero-text h1 { font-size: 2.5rem; margin-bottom: 20px; }
+.hero-text p { color: #cbd5f5; margin-bottom: 30px; }
+
+.btn { display: inline-block; padding: 12px 26px; margin-left: 10px; border-radius: 30px; background: #22c55e; color: #022c22; text-decoration: none; font-weight: bold; transition: all .3s ease; }
+.btn:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(34,197,94,.4); }
+
+/* Intro */
+.intro { text-align: center; }
+.intro h2 { font-size: 2rem; margin-bottom: 20px; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
+.feature { background: #020617; padding: 25px; border-radius: 20px; transition: transform .3s ease; }
+.feature:hover { transform: translateY(-8px); }
+
+/* Schedule */
+.schedule h2 { text-align: center; margin-bottom: 40px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
+.card { background: #020617; padding: 30px; border-radius: 20px; text-align: center; transition: all .3s ease; }
+.card:hover { transform: scale(1.05); box-shadow: 0 20px 40px rgba(0,0,0,.4); }
+.card h3 { margin-bottom: 10px; }
+.card span { color: #94a3b8; display: block; margin-bottom: 20px; }
+
+/* Groups */
+.groups { text-align: center; }
+.groups h2 { margin-bottom: 30px; }
+.group-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.group { background: #22c55e; color: #022c22; padding: 18px 30px; border-radius: 40px; font-weight: bold; transition: all .3s ease; text-decoration: none; }
+.group:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(34,197,94,.4); }
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 900px) {
+  .hero { flex-direction: column; text-align: center; }
+  .hero img { margin-bottom: 40px; }
+}
+
+  </style>
+</head>
+<body>  <!-- Hero -->  <section class="hero">
+    <img src="https://via.placeholder.com/400x500" alt="صاحب القناة" />
+    <div class="hero-text">
+      <h1>أهلاً بيك 👋</h1>
+      <p>أنا صاحب قناة Study With Me، هنا بنذاكر سوا في هدوء وتركيز، لايفات حقيقية تحس إنك مش لوحدك.</p>
+      <a href="#schedule" class="btn">مواعيد Study With Me</a>
+    </div>
+  </section>  <!-- Intro -->  <section class="intro">
+    <h2>عن القناة</h2>
+    <p>محتوى للمذاكرة الهادية، بدون تشتيت، علشان تركز وتنجز.</p>
+    <div class="features">
+      <div class="feature">📖 جلسات مذاكرة حقيقية</div>
+      <div class="feature">⏱️ تايمر + تقسيم وقت</div>
+      <div class="feature">🎧 موسيقى هادئة</div>
+      <div class="feature">🤍 إحساس إنك مش لوحدك</div>
+    </div>
+  </section>  <!-- Schedule -->  <section class="schedule" id="schedule">
+    <h2>مواعيد Study With Me</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>السبت</h3>
+        <span>8:00 مساءً</span>
+        <a class="btn" href="#">ادخل الجلسة</a>
+      </div>
+      <div class="card">
+        <h3>الاثنين</h3>
+        <span>6:30 مساءً</span>
+        <a class="btn" href="#">ادخل الجلسة</a>
+      </div>
+      <div class="card">
+        <h3>الأربعاء</h3>
+        <span>9:00 مساءً</span>
+        <a class="btn" href="#">ادخل الجلسة</a>
+      </div>
+    </div>
+  </section>  <!-- Groups -->  <section class="groups">
+    <h2>جروبات المذاكرة</h2>
+    <p>لو محتاج متابعة ودعم أكتر 👇</p>
+    <div class="group-links">
+      <a href="#" class="group">واتساب</a>
+      <a href="#" class="group">تليجرام</a>
+      <a href="#" class="group">فيسبوك</a>
+    </div>
+  </section></body>
+</html>
